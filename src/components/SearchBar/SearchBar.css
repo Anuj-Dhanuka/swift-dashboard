@@ -1,0 +1,31 @@
+/* src/components/SearchBar.css */
+@import '../../styles/variables.css';
+
+.search-bar {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 0.625rem 1rem;
+  font-size: 0.9375rem;
+  color: var(--text-primary);
+  background-color: var(--bg-surface);
+  border: 1px solid var(--ui-border);
+  border-radius: 8px;
+  box-shadow: 0 1px 2px var(--ui-shadow);
+  transition: all 0.2s ease;
+}
+
+.search-bar input:focus {
+  border-color: var(--brand-primary);
+  box-shadow: 0 0 0 3px rgba(39, 42, 75, 0.1);
+  outline: none;
+}
+
+.search-bar input::placeholder {
+  color: var(--text-muted);
+  opacity: 0.8;
+}

@@ -1,0 +1,44 @@
+:root {
+  /* Brand Colors */
+  --brand-primary: #272a4b;
+  --brand-primary-hover: #1f213e;
+  --brand-secondary: #00c48c;
+  --brand-secondary-hover: #00a97b;
+
+  /* Backgrounds */
+  --bg-primary: #f8fafc;
+  --bg-surface: #ffffff;
+  --bg-navbar: var(--brand-primary);
+  --bg-sidebar: var(--brand-primary);
+
+  /* Text */
+  --text-primary: #1e1e2f;
+  --text-muted: #6b7280;
+  --text-on-dark: #f9fafb;
+  --text-white: #ffffff;
+
+  /* UI Borders */
+  --ui-border: #d1d5db;
+  --ui-border-light: #e5e7eb;
+
+  /* Table */
+  --table-header-bg: var(--brand-primary);
+  --table-header-text: #ffffff;
+  --table-row-even: #ffffff;
+  --table-row-odd: #f0f2f5;
+  --table-cell-text: var(--text-primary);
+  --table-column-border: #d1d5db;
+  --table-row-border: #e5e7eb;
+
+  /* Buttons */
+  --button-primary: var(--brand-primary);
+  --button-primary-hover: var(--brand-primary-hover);
+  --button-secondary: var(--brand-secondary);
+  --button-secondary-hover: var(--brand-secondary-hover);
+  --button-text: #ffffff;
+
+  /* Scrollbar */
+  --scrollbar-thumb: #a0aec0;
+  --scrollbar-thumb-hover: #718096;
+  --scrollbar-track: #e2e8f0;
+}
