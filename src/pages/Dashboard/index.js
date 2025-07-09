@@ -5,7 +5,7 @@ import Pagination from '../../components/Pagination';
 import SearchBar from '../../components/SearchBar';
 import Navbar from '../../components/Navbar';
 import SortContainer from '../../components/SortContainer';
-import { SORT_DIRECTIONS, sortData, getNextSortOrder } from '../../utils/sorting';
+import { SORT_DIRECTIONS, getNextSortOrder } from '../../utils/sorting';
 import './Dashboard.css';
 
 const COMMENTS_API = 'https://jsonplaceholder.typicode.com/comments';

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Navbar from '../components/Navbar';
 import { useNavigate } from 'react-router-dom';
 import './Profile.css';
-import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaGlobe, FaBuilding, FaUser } from 'react-icons/fa';
+import { FaEnvelope, FaMapMarkerAlt, FaBuilding } from 'react-icons/fa';
 
 const PROFILE_API = 'https://jsonplaceholder.typicode.com/users';
 
