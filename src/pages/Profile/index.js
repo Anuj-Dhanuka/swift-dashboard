@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Navbar from '../components/Navbar';
+import Navbar from '../../components/Navbar';
 import { useNavigate } from 'react-router-dom';
 import './Profile.css';
 import { FaEnvelope, FaMapMarkerAlt, FaBuilding } from 'react-icons/fa';
