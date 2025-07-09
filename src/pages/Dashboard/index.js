@@ -6,6 +6,7 @@ import SearchBar from '../../components/SearchBar';
 import Navbar from '../../components/Navbar';
 import SortContainer from '../../components/SortContainer';
 import { SORT_DIRECTIONS, getNextSortOrder } from '../../utils/sorting';
+import { FiRefreshCw } from 'react-icons/fi';
 import './Dashboard.css';
 
 const COMMENTS_API = 'https://jsonplaceholder.typicode.com/comments';
@@ -32,6 +33,16 @@ const Dashboard = () => {
       console.error('Error loading dashboard state:', error);
     }
   }, []);
+
+  // Reset all data to initial state
+  const resetData = () => {
+    setSearchTerm('');
+    setSortField('postId');
+    setSortOrder('asc');
+    setCurrentPage(1);
+    setPageSize(10);
+    localStorage.removeItem('dashboardState');
+  };
 
   // Persist searchTerm
   useEffect(() => {
@@ -143,6 +154,14 @@ const Dashboard = () => {
             </div>
             <div className="search-container">
               <SearchBar value={searchTerm} onChange={setSearchTerm} />
+              <button 
+                onClick={resetData}
+                className="reset-button"
+                title="Reset all filters and sorting"
+              >
+                <FiRefreshCw className="reset-icon" />
+                Reset
+              </button>
             </div>
           </div>
 

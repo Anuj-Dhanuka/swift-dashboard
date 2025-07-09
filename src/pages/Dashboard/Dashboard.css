@@ -89,6 +89,51 @@
   border-color: var(--ui-primary);
 }
 
+/* Reset button styles */
+.reset-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+  padding: 8px 12px;
+  background-color: #f0f2f5;
+  color: #4a5568;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.reset-button:hover {
+  background-color: #e2e8f0;
+  border-color: #cbd5e0;
+}
+
+.reset-button:active {
+  transform: translateY(1px);
+}
+
+.reset-icon {
+  margin-right: 6px;
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  .search-container {
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+  
+  .reset-button {
+    width: 100%;
+    margin-left: 0;
+    justify-content: center;
+  }
+}
+
 .search-input {
   border: none;
   outline: none;
